@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/login.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet" />
+    <title>From Login</title>
+  </head>
+  <body>
+    <section class="login py-5">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-5">
+            <img src="/public/images/kaset.jpg" class="img-fluid" alt="" srcset="" />
+          </div>
+          <form action="javascript:void(0);" class="col-lg-7 text-center">
+            <h1 class="mt-5 rockpapper">Rock Papper Scissors</h1>
+            <div class="form-row py-3 pt-5">
+              <div class="offset-1 col-lg-10">
+                <input type="text" class="inp px-3" id="username" placeholder="Username" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="offset-1 col-lg-10">
+                <input type="password" class="inp px-3" id="password" placeholder="Password" />
+              </div>
+            </div>
+            <div class="form-row-py-3">
+              <div class="offset-1 col-lg-10">
+                <button type="submit" onclick="login()" class="mt-5">
+                  <strong>LOGIN</strong>
+                </button>
+                <p>Do you haven't account ? <a href="/register">Register</a></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // cara komunikasi dengan server
+      const username = document.querySelector('#username');
+      const password = document.querySelector('#password');
+
+      // Example POST method implementation:
+      // https://medium.com/javascript-indonesia-community/berbagai-teknik-dan-cara-melakukan-fetch-api-menggunakan-javascript-yang-harus-kamu-ketahui-5a94f361643a
+      async function postData(url = '', data = {}) {
+        // Default options are marked with *
+        const response = await fetch(url, {
+          method: 'POST', // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data), // body data type must match "Content-Type" header
+        });
+        return response; // parses JSON response into native JavaScript objects
+      }
+
+      function login(e) {
+        postData('/login', { username: username.value, password: password.value })
+          .then(async (data) => {
+            const response = await data.json();
+            if (data.ok) {
+              window.location = '/game';
+            } else {
+              alert(response.message);
+            }
+          })
+          .catch((err) => console.log(err));
+      }
+    </script>
+  </body>
+</html>

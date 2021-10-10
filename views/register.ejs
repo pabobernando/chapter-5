@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/login.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <title>Form Register</title>
+  </head>
+  <body>
+    <section class="login py-5">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-5">
+            <img src="/public/images/kaset.jpg" class="img-fluid" alt="" srcset="" />
+          </div>
+          <div class="col-lg-7 text-center">
+            <h1 class="mt-5 rockpapper">Rock Papper Scissors</h1>
+            <div class="form-row py-3 pt-5">
+              <div class="offset-1 col-lg-10">
+                <input type="text" id="username" class="inp px-3" name="username" placeholder="Username" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="offset-1 col-lg-10">
+                <input id="password" class="inp px-3" password="password" type="password" placeholder="Password" />
+              </div>
+            </div>
+            <div class="form-row-py-3">
+              <div class="offset-1 col-lg-10">
+                <button class="mt-5"><strong>REGISTER</strong></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // cara komunikasi dengan server
+      const username = document.getElementById('username');
+      const password = document.getElementById('password');
+
+      // Example POST method implementation:
+      async function postData(url = '', data = {}) {
+        // Default options are marked with *
+        const response = await fetch(url, {
+          method: 'POST', // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data), // body data type must match "Content-Type" header
+        });
+        return response.json(); // parses JSON response into native JavaScript objects
+      }
+
+      function register() {
+        postData('/register', { username: username.value, password: password.value }).then((data) => {
+          // window.location = '/login';
+        });
+      }
+    </script>
+  </body>
+</html>

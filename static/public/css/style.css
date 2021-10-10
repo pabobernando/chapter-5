@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container2 {
+  text-align: center;
+  margin-top: 313.7px;
+  justify-content: space-around;
+}
+
+.play1 {
+  font-size: 3rem;
+  color: white;
+  margin-top: 313.7px;
+  margin-bottom: 57.28px;
+}
+
+.experience {
+  text-align: center;
+  color: white;
+  margin-bottom: 24.62px;
+}
+.thestor {
+  text-align: center;
+  color: white;
+  margin-bottom: 24.62px;
+}
+
+.btn {
+  text-align: center;
+  align-items: center;
+}
+
+.collapse.navbar-collapse {
+  margin-left: 142px;
+}
+
+.btn.btn-warning {
+  text-align: center;
+  margin-bottom: 285.22px;
+}
+
+.container-fluid {
+  text-align: center;
+  padding: 0;
+}
+
+.conto {
+  background-image: url(/public/images/main-bg.jpg);
+  background-size: cover;
+}
+
+.segitiga1 {
+  height: 0px;
+  width: 0px;
+  border-top: solid 30px white;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+}
+
+.box1 {
+  padding-bottom: 52.12px;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.box2 {
+  display: inline-block;
+}
+
+/* ./ (static/public/css) */
+/* / () */
+
+.box3 {
+  background-image: url(/public/images/the-games-bg.jpg);
+  background-size: cover;
+  padding: 25rem 4rem;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+}
+
+h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 13.56px;
+}
+
+.container3 {
+  display: inline-block;
+  margin-top: 254.81px;
+  margin-left: 83.56px;
+}
+
+#thegame {
+  color: white;
+  font-size: 56px;
+}
+
+.container4 {
+  position: relative;
+  background-size: cover;
+  display: inline-block;
+  width: 858px;
+  height: 477px;
+  margin-top: 282.02px;
+  margin-left: 4.39px;
+}
+
+#carouselExampleIndicators {
+  text-align: center;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 282.03px;
+}
+
+img {
+  text-align: center;
+  align-items: center;
+}
+
+.bungkusbatu {
+  text-align: center;
+  align-items: center;
+  display: block;
+  position: relative;
+}
+
+.container5 {
+  background-image: url(/public/images/features.jpg);
+  background-size: cover;
+  padding: 25rem 0rem;
+}
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+
+.carousel-control-next-icon {
+  margin-right: -150px;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -150px;
+}
+
+.d-block {
+  width: 858px;
+  height: 400px;
+}
+
+.feature1 {
+  color: #ffb548;
+  padding-bottom: 10px;
+}
+.FEATURES {
+  color: white;
+  padding-bottom: 70.75px;
+}
+
+.text-off-feature {
+  color: white;
+  padding-bottom: 27.75px;
+}
+
+.feature2 {
+  color: #ffb548;
+  padding-bottom: 100.71px;
+}
+
+.feature3 {
+  color: #ffb548;
+  padding-bottom: 255px;
+}
+
+.box6 {
+  padding-bottom: 259px;
+}
+
+.box7 {
+  border: 1px solid white;
+  display: inline-block;
+}
+
+.box8 {
+  border: 1px solid red;
+}
+
+.bg-cave {
+  background-image: url('/public/images/requirements.png');
+  color: white;
+  padding: 18rem 5rem;
+}
+
+.background4 {
+  color: white;
+  background-image: url(/public/images/requirements.png);
+  padding-bottom: 207px;
+  background-size: cover;
+}
+
+.header3-4 {
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 54.29px;
+}
+
+.header1-4 {
+  color: white;
+  padding-left: 0px;
+  margin-bottom: 87.73px;
+  font-size: 4rem;
+}
+
+.bungkusbag4 {
+  padding-left: 121.77px;
+}
+
+.bungkusbag5 {
+  background-color: black;
+  background-size: cover;
+  padding-top: 160px;
+}
+
+.top1 {
+  margin-left: 100px;
+}
+
+.abc {
+  padding-left: 130px;
+  margin-bottom: 29px;
+}
+
+.imgr {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+}
+
+.imgr1 {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+}
+
+.imgr2 {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+}
+
+.bagian6 {
+  display: block;
+  position: relative;
+}
+
+.box7 {
+  border: 0;
+  display: flex;
+  justify-content: left;
+}
+
+.height6 {
+  height: 55px;
+  margin-left: 17.22px;
+}
+
+.jarak {
+  padding-top: 135.97px;
+}
+
+.os {
+  font-size: 24px;
+  text-align: center;
+}
+
+.fl {
+  display: flex;
+  border: 1px solid red;
+}
+
+.fk {
+  text-decoration: none;
+  padding-left: 32px;
+  list-style: none;
+}
+.fo {
+  padding-left: 347px;
+  text-decoration: none;
+  list-style: none;
+
+  border: 1px solid red;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.bungkusbox {
+  border: 1px solid white;
+}
+
+.bungkuspertama {
+  border: 1px solid white;
+  display: flex;
+}
+
+.bb {
+  border-bottom: 2px solid white;
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.card {
+  position: relative;
+}
+
+.to-right-top {
+  position: absolute;
+  color: white;
+  right: 10px;
+  top: 10px;
+}
+
+.card .card-body .message {
+  padding-left: 80px;
+}
+
+.card .card-body .message::after {
+  clear: both;
+}
+
+.message {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  margin-top: 18px;
+  height: 43%;
+  z-index: 400;
+}
+
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline > li:before {
+  margin-top: 18px;
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+a[data-bs-toggle] {
+  font-size: 2rem;
+  color: #ffb548;
+}
+
+p.multi-collapse {
+  color: white;
+}
+
+.container5 {
+  margin: 0;
+}
+
+@media only screen and (max-width: 634px) {
+  .header1-4 {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
