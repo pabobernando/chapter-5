@@ -1,14 +1,14 @@
 const express = require('express');
 const router = express.Router();
 let database = require('./static/public/db/users.json');
+const fs = require('fs');
+const path = require('path');
 
 router.get('/', (req, res) => {
   res.render('tampilan');
 });
 
 router.get('/game', (req, res) => {
-  console.log(req.cookies);
-
   if (req.cookies.sudah_login) {
     res.render('game');
   } else {
@@ -38,6 +38,10 @@ router.get('/register', (req, res) => {
   res.render('register');
 });
 
+function jsonOut(data) {
+  fs.writeFileSync(path.resolve(__dirname, `./static/public/db/users.json`), JSON.stringify(data));
+}
+
 router.post('/register', (req, res) => {
   const { username, password } = req.body;
 
@@ -49,6 +53,8 @@ router.post('/register', (req, res) => {
     username,
     password,
   });
+
+  jsonOut(database);
 
   res.json({ message: 'berhasil register' });
 });
