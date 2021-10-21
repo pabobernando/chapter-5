@@ -11,11 +11,24 @@
   "author": "Pabo Bernando",
   "license": "ISC",
   "dependencies": {
+    "cookie": "^0.4.1",
     "cookie-parser": "^1.4.5",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.13"
-  }
+    "nodemon": "^2.0.13",
+    "sequelize": "^6.7.0",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabobernando/chapter-5.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/pabobernando/chapter-5/issues"
+  },
+  "homepage": "https://github.com/pabobernando/chapter-5#readme"
 }

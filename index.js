@@ -45,7 +45,7 @@ function jsonOut(data) {
 router.post('/register', (req, res) => {
   const { username, password } = req.body;
 
-  if (!username && !password) {
+  if (!username || !password) {
     return res.json({ message: 'username dan password belum disediakan' });
   }
 
